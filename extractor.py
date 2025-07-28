@@ -78,7 +78,7 @@ def process(pdf_path):
     return result
 
 if __name__ == "__main__":
-    in_dir, out_dir = "./input", "./output"
+    in_dir, out_dir = "./sample_datasets/pdfs", "./sample_datasets/outputs"
     os.makedirs(out_dir, exist_ok=True)
     for file in os.listdir(in_dir):
         if not file.endswith(".pdf"):
